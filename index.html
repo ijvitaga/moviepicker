@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <img id="clear" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAACVBMVEX///9u4v+a6f+ShM83AAABR0lEQVR4nO3QMREAMAgAMcC/6M69t5BIyNzyu9nht07CSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSe1c8vvHtPzA5W4YVJ9AAAAAElFTkSuQmCC"> -->
+
+    
+    <video id="bg" src="video/action.mp4" autoplay="true" loop="true" muted="true"></video>
+
+    <!-- <iframe id="bg" src="https://www.youtube.com/embed/ENCAF874PFc?start=3&autoplay=1&muted=1&controls=0&loop=1&showinfo=0&modestbranding=1&disablekb=1&enablejsapi=1&playlist=PLJfXIwXZ_RNf65kVavPxGnCgKrwXVzaow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" muted="true"></iframe> -->
+    
+    <div id="content">
+    <nav>
+        <h1>Movie Picker</h1>
+    </nav>
+
+    <!-- <div id="bg_container">
+        <iframe id="bg" src="https://www.youtube.com/embed/ENCAF874PFc?start=3?controls=0&showinfo=0&rel=0&autoplay=1&playlist=PLJfXIwXZ_RNf65kVavPxGnCgKrwXVzaow&mute=1" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+    </div> -->
+
+    <form>
+        <input type="text" placeholder="movie genre">
+        <input type="submit" value="Get Movie List">
+    </form>>
+
+    <div id="Poster"></div>
+
+    <dl>
+    <dt>Title</dt>
+    <dd id="title">loading...</dd>
+
+    <dt>Year</dt>
+    <dd id="year">loading...</dd>
+
+    <dt>Rating</dt>
+    <dd id="rated">loading</dd>
+
+    <dt>Genre</dt>
+    <dd id="genre">loading...</dd>
+    </dl>
+    </div>
+
+
+
+
+</body>
+</html>
