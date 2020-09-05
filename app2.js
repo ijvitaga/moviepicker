@@ -104,9 +104,9 @@ $('form').on('submit', (event) => {
     event.preventDefault();
 
     const movie = $('input').val();
-    const movieGenre = 
 
-    const promise = $.ajax({
+
+    promise = $.ajax({
         url:`https://api.themoviedb.org/3/search/movie?query=${movie}&${api}`
         // url:`https://api.themoviedb.org/3/search/movie?${api}&query=${movie}`
 
@@ -128,22 +128,23 @@ $('form').on('submit', (event) => {
 
 
 //----Image Carousel Buttons----//
-const actionButton = () => {$('#action').on('click', (event) => {
+$('#action').on('click', (event) => {
     event.preventDefault();
     
     const promise = $.ajax({
         url:`https://api.themoviedb.org/3/discover/movie?api_key=9ff1c8daa2ffbe78abb2db511c1d8b3a&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`
     })
+//for loop with math.random * based on the length of the data that comes back
 
     promise.then(
         (data)=>{
-            $('movie1').html(data.results[0].title);
+            $('#movie1').html(data.results[0].title);
             // $('#year').html(data.release_date);
             // $('#poster').html(`<img src="${data.poster_path}">`)
         }
     )
     })
-}
+
 
 $('#comedy').on('click', (event) => {
     event.preventDefault();
@@ -254,4 +255,13 @@ $('.slider-inner').children().eq(currentImgIndex).css("display", "block");
 //         }
         
 //     });
+
+
+
+
+///////////To Do List(post presentation)//////////////
+
+//Create git hub repo on github and push project. the project folder has git init but go to github and click + to connect the project to github
+//host project on vercel (just link github repo) make it public
+//send link on vercel to Ira
 
